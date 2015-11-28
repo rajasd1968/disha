@@ -1,0 +1,42 @@
+<html>
+	{% load staticfiles %}
+<body>
+<center>
+<img src= "{% static 'img/eAutomatonLabs.png' %}" class = 'img-responsive' height="150" width="1200" />
+</center>
+<br>
+
+<center>
+<img src= "{% static 'img/Dishalogo.jpg' %}" class = 'img-disha' height="150" width="350" />
+</center>
+<br>
+<style type="text/css">
+.table_outer { height: 15em; overflow: auto; }
+</style>
+<div class="table_outer">
+
+<table border = "1" align = "center">
+	<th id="Rank">Rank</th>
+	<th id="Resume#">Resume#</th>
+	<th id="Name">Name</th>
+    <th id="Skill">Primary Skill</th>
+    <th id="Experience">Experience</th>
+    <th id="Location">Location</th>
+    <th id="Education">Education</th>
+	<th id="Organization">Organization</th>
+	<th id="Dervived Info">Derived Info</th>
+    {% for candidate in html_candidates %}
+    <tr>
+    {% for attribute in candidate %} 
+    	<td>
+    			{{ attribute}}
+    	</td>
+    {% endfor %}
+    <td>
+		<a href="/derivedInfo/{{candidate.1}}">Derived Info</a>
+	{% endfor %}
+    </tr>
+ </table>
+</div>
+<br><br> 
+</body>

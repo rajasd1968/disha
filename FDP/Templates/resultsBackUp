@@ -1,0 +1,44 @@
+<html>
+	{% load staticfiles %}
+<body>
+<center>
+<img src= "{% static 'img/eAutomatonLabs.png' %}" class = 'img-responsive' height="150" width="1200" />
+</center>
+<br><br>
+
+<center>
+<img src= "{% static 'img/Dishalogo.jpg' %}" class = 'img-disha' height="150" width="350" />
+</center>
+<br>
+
+<table border = "1" align = "center">
+	<th id="Rank">Rank</th>
+	<th id="Resume#">Resume#</th>
+	<th id="Name">Name</th>
+    <th id="Skill">Primary Skill</th>
+    <th id="Total Experience">Total Experience</th>
+    <th id="Location">Location</th>
+    <th id="Education">Education</th>
+	<th id="Organization">Organization</th>
+	<th id="ReserveFlag">Reserve</th>
+    {% for candidate in html_candidates %}
+    <tr>
+    {% for attribute in candidate %} 
+    	<td>
+    			{{ attribute }}
+    	</td>
+    {% endfor %}
+    <td>
+    	<input type="checkbox" name="Reserve" align="center">
+    </td>
+    {% endfor %}
+    </tr>
+ </table>
+<br><br> 
+<form action="/derivedInfo/" method="get">
+<center>
+    <input type="text" name="q" size="15" width="2000">
+     <input type="submit" value="DerivedInfo">
+</center>
+</form>
+</body>

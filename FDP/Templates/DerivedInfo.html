@@ -1,0 +1,96 @@
+<html>
+<body>
+<CENTER> 
+<TABLE BORDER=5 CELLSPACING=3 CELLPADDING=6> 
+	<TR> 
+		<th colspan=4 bgcolor="#00CED1"> Candidate Derived Information </th>
+	</TR>
+	<TR> 
+		<td colspan=2 align="center" bgcolor="#00FFFF"> Candidate Attributes </td>
+		<td colspan=2 align="center" bgcolor="#00FFFF"> Comparitive Attributes </td>
+	</TR>
+	<TR>
+		<TD> Name </TD>
+		<TD> {{derivedInfo.name}}</TD>
+		<TD> Tech Percentile</TD>
+		<TD> {{derivedInfo.TPercetile}}</TD>
+	</TR>
+	<TR>
+		<TD> Primary Skill</TD>
+		<TD> {{derivedInfo.PrSkill}}</TD>
+		<TD> Management Percentile</TD>
+		<TD> {{derivedInfo.MPercetile}}</TD>
+	</TR>
+	<TR>
+		<TD> Total Experience</TD>
+		<TD> {{derivedInfo.TotalExp}}</TD>
+		<TD> Domain Percentile</TD>
+		<TD> {{derivedInfo.DPercetile}}</TD>
+	</TR>
+	<TR>
+		<TD> Education</TD>
+		<TD> {{derivedInfo.Qualif}}</TD>
+		<TD> Tech Contribution Index</TD>
+		<TD> TBD </TD>
+	</TR>
+		<TR>
+		<TD> Current Employer</TD>
+		<TD> {{derivedInfo.Employer}}</TD>
+		<TD> Social Index </TD>
+		<TD> TBD </TD>
+	</TR>
+	<TR> 
+		<td colspan=4> </td>
+	
+	</TR>
+	<TR> 
+		<td colspan=2 align="center" bgcolor="#00FFFF"> Key Indices </td>
+	
+		<td colspan=2 align="center" bgcolor="#00FFFF"> Summary Information </td>
+	
+	</TR>
+	<TR> 
+		<TD colspan=2 bgcolor="#F0FFFF"> <b>Tech Related</b></TD>
+		<TD colspan=2 bgcolor="#F0FFFF"> <b>Areas of Strength</b></TD>
+
+	</TR>
+
+	<TR> 
+		<TD> Tech Depth</TD>
+		<TD> {{derivedInfo.TDIdx}}</TD>
+		<TD rowspan=2 colspan=2> {{derivedInfo.Strength}}</TD>
+	</TR>	
+	<TR> 
+		<TD> Tech Breadth</TD>
+		<TD> {{derivedInfo.TBIdx}}</TD>
+	</TR>	
+	<TR> 
+		<TD> Tech Role</TD>
+		<TD> {{derivedInfo.RoleIdx}}</TD>
+		<TD colspan=2 bgcolor="#F0FFFF"> <b>Areas of Improvement</b></TD>
+	</TR>	
+	<TR> 
+		<TD> Exp Index</TD>
+		<TD> {{derivedInfo.ExpIdx}}</TD>
+		<TD rowspan=2 colspan=2> {{derivedInfo.Improvement}}</TD>
+	</TR>	
+	<TR> 
+		<TD colspan=2 bgcolor="#F0FFFF"> <b>Management and Domain Related </b></TD>		
+	</TR>	
+	<TR> 
+		<TD> Management Breadth</TD>
+		<TD> {{derivedInfo.MBIdx}}</TD>
+		<TD colspan=2 bgcolor="#F0FFFF"> <b>Summary Information</b></TD>
+	</TR>	
+	<TR> 
+		<TD> Management Depth</TD>
+		<TD> {{derivedInfo.MDIdx}}</TD>
+		<TD rowspan=2 colspan=2> {{derivedInfo.Summary}}</TD>
+	</TR>
+	<TR> 
+		<TD> Domain Index</TD>
+		<TD> {{derivedInfo.DIdx}}</TD>
+	</TR>	
+</TABLE> 
+</CENTER> 
+</body>

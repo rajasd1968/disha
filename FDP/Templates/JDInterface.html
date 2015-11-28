@@ -1,0 +1,23 @@
+<html>
+	{% load staticfiles %}
+<body>
+<center>
+<img src= "{% static 'img/eAutomatonLabs.png' %}" class = 'img-responsive' height="150" width="1200" />
+</center>
+<br><br><br>
+
+<center>
+<img src= "{% static 'img/Dishalogo.jpg' %}" class = 'img-disha' height="150" width="350" />
+</center>
+<br><br>
+
+<center>
+	Please select a Job Description (JD) File
+</center>	
+<form action="/ResultsByJD/" method="get">
+<center>
+	<input type="file" name="q" value="Select JD File" size="50" method="get">
+	 <input type="submit" value="ShortList">
+</center>
+</form>
+
